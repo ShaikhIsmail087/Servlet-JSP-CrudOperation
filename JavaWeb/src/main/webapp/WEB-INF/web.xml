@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+id="WebApp_ID" version="4.0">
+  <display-name>JavaWeb</display-name>
+  
+  <servlet>
+  <servlet-name>first</servlet-name>
+  <servlet-class>com.servlets.FirstServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>second</servlet-name>
+  <servlet-class>com.servlets.SecondServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+        <servlet-name>FormDemo</servlet-name>
+        <servlet-class>com.form.FormDemoServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>FormDemo</servlet-name>
+        <url-pattern>/tester</url-pattern>
+    </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>first</servlet-name>
+  <url-pattern>/web</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>second</servlet-name>
+  <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Third</servlet-name>
+  <servlet-class>com.servlets.HelloWorld</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Third</servlet-name>
+  <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddServlet</servlet-name>
+  <servlet-class>com.servlets.AddServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>AddServlet</servlet-name>
+  <url-pattern>/addition</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
